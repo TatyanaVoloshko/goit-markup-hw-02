@@ -11,6 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
+    background-color: #FFFFFF;
 }
 
 /* header-logo */
@@ -35,16 +36,6 @@ body {
     color: var(--dark);
 }
 
-.web-top:hover, 
-.web-top:focus {
-    color: var(--text);
-}
-
-.studio-top:hover,
-.studio-top:focus {
-    color: var(--text);
-}
-
 .web-top:active, 
 .studio-top:active {
     color: var(--primary-brand);
@@ -59,7 +50,7 @@ body {
 .list-navigation {
     color: var(--dark);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -98,16 +89,12 @@ body {
 
 .button {
     background-color: var(--dark);
-    width: 1440px;
-    height: 675px;
-    left: 0px;
-    top: 0px;
+    text-align: center;
 }
 
 .solutions {
-    padding-top: 264px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -116,26 +103,23 @@ body {
 }
 
 .contained {
+    font-family: 'Roboto', sans-serif;
     padding: 16px 32px;
-    gap: 10px;
-    width: 170px;
-    height: 51px;
-    left: 635px;
-    top: 432px;
     background: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
-    margin: 0 auto;
-    display: block;
+           
 }
 
 .contained:hover,
 .contained:focus {
     background: var(--primary-brand);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 4px;
 }
 
 .contained:active{
@@ -147,13 +131,12 @@ body {
 
 /* section-advanteges */
 
-.invisible {
-    font-size: 0;
+.list-pluses{
+    list-style-type: none;
 }
 
 .list-title {
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -161,24 +144,43 @@ body {
 }
 
 .list-advanteges {
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
 }
 
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  } 
+
 /* section-our-work and team*/
 
 .title {
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--dark)
+}
+
+.team{
+    background: var(--light);
+}
+
+.team-item{
+    background: #FFFFFF;
 }
 
 .list-images{
@@ -190,7 +192,7 @@ body {
 
 .list-names {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -210,10 +212,6 @@ body {
 /* footer */
 
 .bottom{
-    width: 1440px;
-    height: 310px;
-    left: 0px;
-    top: 2283px;
     background: var(--dark);
 }
 
@@ -236,16 +234,6 @@ body {
     color: var(--light);
 }
 
-.web-bottom:hover, 
-.web-bottom:focus {
-    color: var(--text);
-}
-
-.stidio-botton:hover,
-.stidio-botton:focus {
-    color: var(--text);
-}
-
 .web-bottom:active, 
 .stidio-botton:active {
     color: var(--primary-brand);
@@ -266,34 +254,11 @@ body {
 
 }
 
-.btn-all{
-    width: 69px;
-    height: 48px;
-    background: var(--primary-brand);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-                0px 2px 1px rgba(0, 0, 0, 0.08), 
-                0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    border-color: var(--primary-brand);
-    cursor: pointer;
-}
-
-.btn-web{
-    width: 116px;
-    height: 48px;
+.filter-btn{
     background: var(--light);
     border: 1px solid var(--accent);
     border-radius: 4px;
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     align-items: center;
@@ -303,80 +268,16 @@ body {
     cursor: pointer;
 }
 
-.btn-app{
-    width: 78px;
-    height: 48px;
-    background: var(--light);
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--primary-brand);
-    cursor: pointer;
-}
-
-.btn-design{
-    width: 101px;
-    height: 48px;
-    background: var(--light);
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--primary-brand);
-    cursor: pointer;
-}
-
-.btn-marketing{
-    width: 126px;
-    height: 48px;
-    background: var(--light);
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--primary-brand);
-    cursor: pointer;
-}
-
-
-
-.btn-all:hover,
-.btn-all:focus,
-.btn-web:hover,
-.btn-web:focus,
-.btn-app:hover,
-.btn-app:focus,
-.btn-design:hover,
-.btn-design:focus,
-.btn-marketing:hover,
-.btn-marketing:focus{
+.filter-btn:hover,
+.filter-btn:focus{
     background: var(--primary-brand);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 4px;
     color: #FFFFFF;
 }
 
-.btn-all:active,
-.btn-web:active,
-.btn-app:active,
-.btn-design:active,
-.btn-marketing:active{
+.filter-btn:active
+{
     background: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -389,17 +290,19 @@ body {
     list-style-type: none;
 }
 
+.portfolio-items{
+    text-decoration: none;
+}
+
 .list-portfolio{
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--dark)
+    color: var(--dark);
 }
 
 .portfolio-jobs{
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
