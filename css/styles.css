@@ -18,7 +18,6 @@ body {
 
 .logo-top {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -36,11 +35,6 @@ body {
     color: var(--dark);
 }
 
-.web-top:active, 
-.studio-top:active {
-    color: var(--primary-brand);
-}
-
 /* heder-navigation */
 
 .navigation {
@@ -49,7 +43,6 @@ body {
 
 .list-navigation {
     color: var(--dark);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -73,7 +66,6 @@ body {
 }
 .list-contacts {
     color: var(--text);
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -93,7 +85,6 @@ body {
 }
 
 .solutions {
-    font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -108,6 +99,7 @@ body {
     background: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
@@ -151,7 +143,7 @@ body {
 }
 
 .visually-hidden {
-    position: absolute;
+      position: absolute;
       white-space: nowrap;
       width: 1px;
       height: 1px;
@@ -191,7 +183,6 @@ body {
 }
 
 .list-names {
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -201,7 +192,6 @@ body {
 }
 
 .list-jobs{
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -217,7 +207,6 @@ body {
 
 .logo-bottom {
     font-family: 'Raleway';
-    font-style: normal;
     font-size: 18px;
     line-height: 1.33;
     align-items: center;
@@ -240,7 +229,6 @@ body {
 }
 
 .reason{
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -255,6 +243,7 @@ body {
 }
 
 .filter-btn{
+    font-family: 'Roboto', sans-serif;
     background: var(--light);
     border: 1px solid var(--accent);
     border-radius: 4px;
